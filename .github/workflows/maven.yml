@@ -5,6 +5,21 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  schedule: 
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+    inputs:
+      suiteXmlFile:
+        description: "testng xml file set up"
+        type: choice
+        options: [testng.xml,smoke.xml,sanity.xml]
+        default: testng.xml
+        required: true
+        
+      
+    
+      
+  
 
 jobs:
   build:
@@ -30,7 +45,7 @@ jobs:
 
       # Step 4: Build project and run tests
       - name: Build with Maven
-        run: mvn clean test -DsuiteXmlFile=testng.xml 
+        run: mvn clean test -DsuiteXmlFile="{{ github.event.inputs.suiteXmlFile }}" 
 
       # Step 5: Archive test reports for visibility
       - name: Upload Test Reports
