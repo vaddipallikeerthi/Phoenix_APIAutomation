@@ -40,10 +40,4 @@ jobs:
           name: surefire-reports
           path: target/surefire-reports
 
-      # Optional: Step 6 - Upload logs (helpful for debugging failures)
-      - name: Upload Logs
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: maven-logs
-          path: target/*.log
+    
