@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-26T09:57:45 IST" name="Default suite" finished-at="2025-09-26T09:57:52 IST" duration-ms="6848">
+  <suite started-at="2025-10-05T23:07:11 IST" name="PhoenixAPITestSuite" finished-at="2025-10-05T23:07:21 IST" duration-ms="9870">
     <groups>
     </groups>
-    <test started-at="2025-09-26T09:57:45 IST" name="Default test" finished-at="2025-09-26T09:57:52 IST" duration-ms="6848">
+    <test started-at="2025-10-05T23:07:11 IST" name="InwarrantyFlow" finished-at="2025-10-05T23:07:21 IST" duration-ms="9870">
+      <class name="com.tests.MasterAPI">
+        <test-method signature="invalidTokenMasterAPI()[pri:0, instance:com.tests.MasterAPI@54d9d12d]" started-at="2025-10-05T23:07:20 IST" name="invalidTokenMasterAPI" finished-at="2025-10-05T23:07:20 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidTokenMasterAPI -->
+        <test-method signature="masterAPITest()[pri:0, instance:com.tests.MasterAPI@54d9d12d]" started-at="2025-10-05T23:07:20 IST" name="masterAPITest" finished-at="2025-10-05T23:07:21 IST" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- masterAPITest -->
+      </class> <!-- com.tests.MasterAPI -->
       <class name="com.tests.LoginAPITest">
-        <test-method signature="LoginAPITest()[pri:0, instance:com.tests.LoginAPITest@5bf0d49]" started-at="2025-09-26T09:57:45 IST" name="LoginAPITest" finished-at="2025-09-26T09:57:52 IST" duration-ms="6762" status="PASS">
+        <test-method signature="LoginAPITest()[pri:0, instance:com.tests.LoginAPITest@6c6cb480]" started-at="2025-10-05T23:07:11 IST" name="LoginAPITest" finished-at="2025-10-05T23:07:17 IST" duration-ms="5826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPITest -->
       </class> <!-- com.tests.LoginAPITest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.tests.UserDetailsAPITest">
+        <test-method signature="userDetailsAPIRequest()[pri:0, instance:com.tests.UserDetailsAPITest@34e9fd99]" started-at="2025-10-05T23:07:17 IST" name="userDetailsAPIRequest" finished-at="2025-10-05T23:07:17 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userDetailsAPIRequest -->
+      </class> <!-- com.tests.UserDetailsAPITest -->
+      <class name="com.tests.CountAPITest">
+        <test-method signature="countAPImissingAuthToken()[pri:0, instance:com.tests.CountAPITest@3c41ed1d]" started-at="2025-10-05T23:07:18 IST" name="countAPImissingAuthToken" finished-at="2025-10-05T23:07:19 IST" duration-ms="1077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countAPImissingAuthToken -->
+        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.tests.CountAPITest@3c41ed1d]" started-at="2025-10-05T23:07:19 IST" name="verifyCountAPIResponse" finished-at="2025-10-05T23:07:20 IST" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountAPIResponse -->
+      </class> <!-- com.tests.CountAPITest -->
+    </test> <!-- InwarrantyFlow -->
+  </suite> <!-- PhoenixAPITestSuite -->
 </testng-results>

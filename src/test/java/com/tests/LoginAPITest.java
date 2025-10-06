@@ -21,7 +21,9 @@ public class LoginAPITest {
 	public void LoginAPITest() throws IOException
 	{
 		
-		//System.out.println(System.getProperty("env"));
+		//Read the p[roprty value that is passed from termina;
+		
+		System.out.println(System.getProperty("env"));
 		
 	
 		
