@@ -45,7 +45,7 @@ jobs:
 
       # Step 4: Build project and run tests
       - name: Build with Maven
-        run: mvn clean test -DsuiteXmlFile="{{ github.event.inputs.suiteXmlFile }}" 
+        run: mvn clean test -Dsurefire.suiteXmlFiles=${{ github.event.inputs.suiteXmlFile }}
 
       # Step 5: Archive test reports for visibility
       - name: Upload Test Reports
